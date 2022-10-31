@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CompanyManagement.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:CompanyManagement.WebApi.Controllers.DivisionController.Get">
+            <summary>
+            Gets all divisions
+            </summary>
+            <returns>The divisions list</returns>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.OfficeController.Get">
+            <summary>
+            Gets all offices
+            </summary>
+            <returns>The oficces list</returns>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.PositionController.Get">
+            <summary>
+            Gets all positions
+            </summary>
+            <returns>The positions list</returns>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.SalaryController.Get(CompanyManagement.Domain.DTOs.Salary.Request.GetAllSalaryParametersDTO)">
+            <summary>
+            Gets all salaries
+            </summary>
+            <returns>The salaries list</returns>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.SalaryController.GetById(System.Int32)">
+            <summary>
+            Get a single salary by id
+            </summary>
+            <response code="404">If the return object doesn't exist in the database</response>
+            <returns>The salary by id</returns>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.SalaryController.GetAllGroupedByEmployee(CompanyManagement.Domain.DTOs.Salary.Request.GetAllSalaryParametersDTO)">
+            <summary>
+            Gets the salaries grouped by employees
+            </summary>
+            <returns>The salaries list</returns>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.SalaryController.Create(System.Collections.Generic.IEnumerable{CompanyManagement.Domain.DTOs.Salary.Request.SalaryForCreationDTO})">
+            <summary>
+            Create a new salary record
+            </summary>
+            <returns>A newly created salary id</returns>
+            <response code="422">If the record already exists</response>
+        </member>
+        <member name="M:CompanyManagement.WebApi.Controllers.SalaryController.GetCountOfSalaries">
+            <summary>
+            Gets the number of salary records in the database
+            </summary>
+            <returns>The number of salary records</returns>
+        </member>
+    </members>
+</doc>
