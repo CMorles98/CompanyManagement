@@ -4,7 +4,7 @@ Company Management (Backend).
 
 ## Description
 
-This solution is a web API developed in DDD architecture using .NET 5.0
+This solution is a web API developed with clean architecture using DDD pattern -> .NET 5.0
 
 ## Database
 
